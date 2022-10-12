@@ -1,0 +1,462 @@
+/*shades of teal and sunshine pallette https://coolors.co/palette/0e7c7b-17bebb-d4f4dd
+#D4F4DD Aero Blue
+#17BEBB Tiffany Blue
+#0E7C7B Teal
+#FFB52E light orange
+#ffcc33 dark yellow
+*/
+
+html { 
+	background-color: #0E7C7B;
+  background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} 
+
+
+body {
+	width: 80%;					/* Makes the body grow according to the browser width*/
+	max-width: 400px;				/* But this makes it stop at 400 px. It can't grow more than that. */
+	margin:auto;
+	color: black;
+	background-color: #0E7C7B;    /*teal*/
+		border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+header {							
+	width: 98%;
+	margin: 1%;
+	height: 100px; /* Will get larger in desktop */
+	margin: auto;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background-color: #0E7C7B;    /*teal*/
+
+}
+.logo {								
+	display: block;
+	width: 60px;	/* Will get larger in desktop */
+	height: 60px;
+	margin-left: 2px;
+	vertical-align: middle;
+	line-height: 50px;
+	border-radius: 10px;
+}
+
+/*nav styles*/
+
+nav {
+	width: 98%;
+	height: 30px;
+	margin:1% auto;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background-color: #0E7C7B; /*teal*/
+}
+/*end nav*/
+
+h1 {
+	font-family: Canela Web,Times,serif;
+	font-size: auto;
+	margin: auto;
+	color: #D4F4DD; /*Aero Blue*/
+}
+
+p {
+	font-family:Roboto Mono,Courier,Helvetica,Arial,sans-serif;
+	font-weight: 400;
+
+}
+
+	img.align-left	{
+		float: left;
+		margin-right: 10px;}
+	img.align-right	{
+		float: right;
+		margin-left: 10px;}
+	img.small {
+		width: 60px;
+		height: 60px;}
+ul {
+	padding: 5px;
+	margin: 0px auto 0px auto;
+	text-align: center;
+	}
+li {
+	display: inline;
+	margin: 0px 10px;
+	}
+a {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover, a.on {
+	color: #cc3333;
+/*	background-color: #ffffff;
+*/}
+section	{
+	overflow: hidden;	/* Instead of height. Grows according to content*/
+	width: 98%;
+	margin: 1%;
+	color: black;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;	
+}
+
+section p{
+		color: white;
+}
+
+article	{							
+	width: 95%;		/* This will turn into 73% in the desktop responsive code */				
+	margin: 1%;
+	padding: 5px;
+	float: left;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+ /* background-color: #D4F4DD;*/	/*Aero Blue*/
+	background-blend-mode: screen;
+}
+aside {
+	width: 95%;	/* This will turn into 23% in the desktop responsive code */
+	display: none;
+	/*margin: 1%;
+	padding: 5px;
+	float: right;
+	border-radius: 10px;
+  background-blend-mode: screen;*/
+}
+
+/*contact form*/
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #0E7C7B; /*Teal*/
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: FFB52E; /*light orange*/
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #17BEBB; /*Tiffany Blue*/
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/*end contact form*/
+
+
+.featured {
+	width: 95%;/* This will turn into 23% in the desktop responsive code */
+	overflow: hidden;
+	margin: 1%;
+	padding: 0px;
+	float: left;
+
+}
+.featured img{
+	max-width: 100%;
+  height: auto;
+}
+
+.onlydesktop {					/* This makes this div dissapear on mobile*/
+	display: none; 			
+}
+
+footer {
+	width: 95%;
+	margin: 1%;
+	padding: 5px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;	
+	overflow: hidden;
+	/*background-color: #7209b7ff;*//*purple: #7209b7ff*/
+}
+.footer-inside {
+	display: block;
+	width: 95%;/* This will turn into 98% in the responsive code */
+	height: 100px;
+/*	margin: 1%;
+*/	float: left;
+}
+
+.bottom-logo {
+	height: 50px;
+	width: 50px;
+	float: left;
+
+}
+
+.myemail {
+	float: left;
+
+}
+
+/*********************************** TABLET *******************************************/
+/* This is telling the website to change every css rule when the browser */
+/* windown is between 768 and 1200 px. Which is usually considerd to be tablet size */
+/* Since tablets are not that different from desktops, there aren't many changes done here */
+@media (min-width: 768px) and (max-width: 1199px) {
+	.featured {
+		width: 48%;	/* This overides the previos width, and turn this block into a two column design, intead of a 4 column */
+	/*	background-color: pink; *//* change color only on tablet mode*/
+}
+
+	body {				
+	max-width: 1200px;	/* Makes the body grow according to the browser width*/			
+}
+
+.topnav a {
+  padding: 10px 10px;
+ }
+	.logo {
+		width: 110px;
+		height: 110px;
+		display: inline;
+	}
+	img.small {
+		width: 100px;
+		height: 100px;}
+
+
+}
+
+/* DESKTOP */
+/* This is telling the website to change every css rule when the browser window */
+/* is greater than 1200 px. Which is usually considerd to be desktop size */
+/* Everything should turn into one columns.*/
+/* For example, if you have to floating columns that are 98% wide each, 
+in this part you turn them into 73% width*/
+
+@media (min-width: 1200px) {
+	
+	body {					
+	max-width: 1500px;	/* Makes the body grow according to the browser width*/		
+	margin: 10px auto;
+	
+	}
+
+	header {
+		height: 160px;
+	}
+
+	/*nav*/
+	nav {
+	width: 80%;
+	margin-left: 15%;
+
+}
+
+.current-page {
+	color: #17BEBB !important; /*Tiffany Blue*/
+} 
+
+/* top nav underline effect*/
+ .squiggle-underline {
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 3px 3px;
+  color: #000;
+  text-decoration: none;
+}
+
+.squiggle-underline:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+	.logo {
+		width: 160px;
+		height: 160px;
+		display: inline;
+			}
+
+	img.small {
+		width: 130px;
+		height: 150px;}
+	article	{
+		width: 70%;		/* This overides the previos width, 
+		but only when the screen is greater than 1200 */
+	}
+
+		h1, h2  {
+	font-family: Canela Web,Times,serif;
+}
+		h1  {
+	font-size: 4.2rem;
+}
+
+p {
+	  font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 1.8rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+	aside {
+	 width: 20%;		/* This overides the previos width, but only when the screen is less than 767 */
+	 overflow: hidden;
+	 margin: 1%;
+	 padding: 0px;
+	 float: left;
+	 display: block;
+	}
+
+
+	.featured {
+		width: 98%;		/* This overides the previos width, 
+		but only when the screen is greater than 767 */
+/*		background-color: #f4f4f4;
+*/	}
+	.footer-inside {
+		width: 30%;		/* This overides the previos width, but only when the screen is less than 767 */
+		padding: 5px;
+	}
+
+	.fa-brands {
+		font-size: 20px;
+		margin-left: 9%;
+	}
+
+		.fa-brands:hover {
+		color: #FFB52E; 
+	}
+
+	.socials {
+		float: right;
+	}
+
+	.bottom-nav {
+	margin-right: 2%;
+	}
+
+		.bottom-nav:hover {
+	color: #FFB52E;
+	}
+
+	.onlydesktop {		/* THis makes this div dissapear on mobile*/
+		display: block;
+	}
+
+	.long-squiggle {
+		margin: 0;
+	}
+
+}
+/*
+
+
+background-size: auto|length|cover|contain|initial|inherit;
+
+
+
+
+Several other breakpoints exist for different devices.
+
+320 - 480px for small phones such as iPhone 6, 7, and 5
+
+478 - 768px for Tablets and iPads
+
+1025 - 1200px for desktops and large screens
+
+Some extra-large screens and TVs can take more than 1200px.
+
+How to use the <picture> tag:
+
+<picture>
+  <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+  <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+*/
+
+
+/* CSS HEX
+
+--flickr-pink: #f72585ff; 
+--byzantine: #b5179eff; 
+--purple: #7209b7ff; 
+--purple-2: #560badff; 
+--trypan-blue: #480ca8ff; 
+--trypan-blue-2: #3a0ca3ff; 
+--persian-blue: #3f37c9ff; 
+--ultramarine-blue: #4361eeff; 
+--dodger-blue: #4895efff; 
+--vivid-sky-blue: #4cc9f0ff;
+
+
+https://coolors.co/b7094c-a01a58-892b64-723c70-5c4d7d-455e89-2e6f95-1780a1-0091ad
+CSS HEX
+--amaranth-purple: #b7094cff; (border)
+--jazzberry-jam: #a01a58ff;
+--amaranth-m-p: #892b64ff;
+--palatinate-purple: #723c70ff;
+--cyber-grape: #5c4d7dff;
+--bdazzled-blue: #455e89ff;
+--sapphire-blue: #2e6f95ff;(lines)
+--cg-blue: #1780a1ff;
+--blue-munsell: #0091adff;
+
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+#F7FFF7 - almost white (background color)
+#343434 - dark gray - almost black
+#2F3061 - blue dark
+#FFE66D - yellow 
+#A1C6D7 - blue light
+
+
+*/
